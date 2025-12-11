@@ -1,0 +1,233 @@
+:root {
+  --bs-primary: #007bff;
+  /* Keep blue as primary or switch to Teal #64ffda */
+  --bs-body-bg: #020c1b;
+  /* Blakest Blue (Deep Navy) */
+  --bs-body-color: #ccd6f6;
+  /* Light text */
+  --bs-link-color: #64ffda;
+  /* Teal links for contrast */
+  --bs-link-hover-color: #007bff;
+  --bs-card-bg: #112240;
+  /* Lighter navy for cards */
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Button overrides to ensure text contrast */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #007bff;
+  --bs-btn-border-color: #007bff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0056b3;
+  --bs-btn-hover-border-color: #0056b3;
+}
+
+.navbar-brand img {
+  height: 30px;
+  /* Reduced by 90% from 300px to 30px */
+  width: auto;
+  margin-right: 10px;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em;
+  /* Set a fixed height */
+  overflow: hidden;
+  /* Hide overflow content */
+  text-overflow: ellipsis;
+  /* Add ellipsis for long text */
+  white-space: nowrap;
+  /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: var(--bs-card-bg);
+  /* Dark card background */
+  color: var(--bs-body-color);
+  border: 1px solid #233554;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+  background: #1d2d50;
+  /* Slightly lighter on hover */
+}
+
+.category-card .text-primary {
+  color: var(--bs-link-color) !important;
+  /* Teal icons */
+}
+
+.card {
+  background-color: var(--bs-card-bg);
+  border: 1px solid #233554;
+  color: var(--bs-body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e6f1ff;
+}
+
+table {
+  color: var(--bs-body-color) !important;
+}
+
+/* Dark Mode Overrides for Bootstrap Components */
+
+/* Inputs */
+.form-control {
+  background-color: #112240 !important;
+  border-color: #233554 !important;
+  color: var(--bs-body-color) !important;
+}
+
+.form-control:focus {
+  background-color: #1a3c6e !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 0.25rem rgba(100, 255, 218, 0.25) !important;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: #112240 !important;
+  border: 1px solid #233554 !important;
+}
+
+.dropdown-item {
+  color: var(--bs-body-color) !important;
+}
+
+.dropdown-item:hover {
+  background-color: #233554 !important;
+  color: #64ffda !important;
+}
+
+/* List Groups */
+.list-group-item {
+  background-color: var(--bs-card-bg) !important;
+  color: var(--bs-body-color) !important;
+  border-color: #233554 !important;
+}
+
+/* Pagination */
+.page-link {
+  background-color: #112240 !important;
+  border-color: #233554 !important;
+  color: #ccd6f6 !important;
+}
+
+.page-item.active .page-link {
+  background-color: #64ffda !important;
+  border-color: #64ffda !important;
+  color: #020c1b !important;
+}
+
+/* Review Section */
+.review h2 {
+  background: #112240 !important;
+  color: #e6f1ff !important;
+  border-color: #233554 !important;
+}
+
+/* Tables */
+.table {
+  color: var(--bs-body-color) !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  color: var(--bs-body-color) !important;
+  box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.05) !important;
+  /* Subtle light overlay instead of heavy white */
+}
+
+
+.table-hover>tbody>tr:hover>* {
+  color: var(--bs-body-color) !important;
+  box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.1) !important;
+}
+
+
+/* Fixed Product Image Size */
+.product-image-fixed {
+  width: 100%;
+  height: 250px;
+  /* Increased from 220px */
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Fixed Carousel Image Size */
+.carousel-image-fixed {
+  width: 100%;
+  height: 400px;
+  /* Increased from 300px */
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 400px;
+  /* Match image height */
+  background-color: var(--bs-card-bg);
+  /* Match theme */
+}
