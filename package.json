@@ -14,7 +14,7 @@
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "generate-toc": "markdown-toc -i readme.md"
   },
-  "author": "Brad Traversy",
+  "author": "Sifat Ahmed",
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -37,3 +37,4 @@
     "nodemon": "^2.0.21"
   }
 }
+
