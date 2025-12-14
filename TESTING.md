@@ -10,7 +10,7 @@
 **Scenario:** User clicks "Sign In" without entering any data.
 **Expected Result:** System should block login and show an error.
 **Actual Result:** ✅ PASS - "Invalid email or password" error displayed.
-![Empty Submission](test-evidence/blank-email%20&%20blank%20pass.png)
+![Empty Submission](test-evidence/blank-email%20&%20with-right-pass.png)
 
 ---
 
