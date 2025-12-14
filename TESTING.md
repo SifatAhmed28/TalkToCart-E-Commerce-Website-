@@ -10,7 +10,7 @@
 **Scenario:** User clicks "Sign In" without entering any data.
 **Expected Result:** System should block login and show an error.
 **Actual Result:** ✅ PASS - "Invalid email or password" error displayed.
-![Empty Submission](test-evidence/blank-email%20&%20with-right-pass.png)
+![Empty Submission](test-evidence/test-empty.png)
 
 ---
 
@@ -18,7 +18,7 @@
 **Scenario:** User enters a valid email but leaves the password field blank.
 **Expected Result:** System should block login.
 **Actual Result:** ✅ PASS - Error message displayed correctly.
-![Missing Password](test-evidence/right-email%20&%20blank-pass.png)
+![Missing Password](test-evidence/test-no-pass.png)
 
 ---
 
@@ -26,7 +26,7 @@
 **Scenario:** User enters a password but leaves the email field blank.
 **Expected Result:** System should block login.
 **Actual Result:** ✅ PASS - Error message displayed correctly.
-![Missing Email](test-evidence/blank-email%20with-right-pass.png)
+![Missing Email](test-evidence/test-no-email.png)
 
 ---
 
@@ -34,4 +34,4 @@
 **Scenario:** User enters an email and password that do not match any account.
 **Expected Result:** System should block login for security.
 **Actual Result:** ✅ PASS - System rejected the login attempt.
-![Wrong Credentials](test-evidence/right%20email%20&%20wrong%20pass.png)
+![Wrong Credentials](test-evidence/test-wrong.png)
