@@ -18,7 +18,7 @@
 **Scenario:** User enters a valid email but leaves the password field blank.
 **Expected Result:** System should block login.
 **Actual Result:** ✅ PASS - Error message displayed correctly.
-![Missing Password](test-evidence/test-no-pass.png)
+![Missing Password](test-evidence/right-email-&-blank-pass.png)
 
 ---
 
@@ -26,7 +26,7 @@
 **Scenario:** User enters a password but leaves the email field blank.
 **Expected Result:** System should block login.
 **Actual Result:** ✅ PASS - Error message displayed correctly.
-![Missing Email](test-evidence/test-no-email.png)
+![Missing Email](test-evidence/blank-email-with-right-pass.png)
 
 ---
 
@@ -34,4 +34,4 @@
 **Scenario:** User enters an email and password that do not match any account.
 **Expected Result:** System should block login for security.
 **Actual Result:** ✅ PASS - System rejected the login attempt.
-![Wrong Credentials](test-evidence/test-wrong.png)
+![Wrong Credentials](test-evidence/wrong-email-and-wrong-pass.png)
